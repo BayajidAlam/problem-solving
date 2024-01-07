@@ -1,0 +1,38 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+
+  int n;
+  cin >> n;
+  string s;
+  cin >> s;
+  int cntA = 0;
+  int cntB = 0;
+
+  for (int i = 0; i < n; i++)
+  {
+    if (s[i] == 'A')
+    {
+      cntA++;
+    }
+    else
+    {
+      cntB++;
+    }
+  }
+  if (cntA == cntB)
+  {
+    cout << "Friendship" << endl;
+  }
+  else if (cntA > cntB)
+  {
+    cout << "Anton" << endl;
+  }
+  else
+  {
+    cout << "Danik" << endl;
+  }
+  return 0;
+}
